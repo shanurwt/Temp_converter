@@ -44,7 +44,7 @@ function BoilingVerdict(props){
   }
   else{
     return (<div className='not'> 
-    <p className='sen'>Water would not boil</p> 
+    <p className='sen'>Water would not Boil.</p> 
     <img className='logo1' src={logo1} width="200px" height="200px" alt="not boiling sir" />
     </div> )
   }

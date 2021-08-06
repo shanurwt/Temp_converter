@@ -39,13 +39,13 @@
 
 .boil{
   text-align: center;
-  margin-left: 40%;
+  margin-left: 38%;
   margin-right: 36%;
 }
 
 .not{
   text-align: center;
-  margin-left: 40%;
+  margin-left: 38%;
   margin-right: 36%;
 }
 
@@ -97,7 +97,6 @@
 
 @media only screen and (max-width:426px){
   
-
 .head{
   margin-left: 6%;
 }
