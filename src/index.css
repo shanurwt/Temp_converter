@@ -3,7 +3,7 @@
 }
 .celsius{
   text-decoration: none;
-  margin-left: 42%;
+  margin-left: 41%;
   height: 130px;
   width: 250px;
   margin-bottom: 20px;
@@ -33,18 +33,87 @@
 
 .head{
   text-align: center;
-  margin-left: 35%;
+  margin-left: 36%;
   margin-right: 33%;
 }
+
 .boil{
   text-align: center;
   margin-left: 40%;
-  margin-right: 38%;
+  margin-right: 36%;
 }
 
 .not{
   text-align: center;
-  margin-left: 35%;
-  margin-right: 33%;
+  margin-left: 40%;
+  margin-right: 36%;
 }
 
+@media only screen and (max-width:1024px) {
+
+  .head{
+    text-align: center;
+    height: 50px;
+    width: 400px;
+  }
+
+  .boil{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 28%;
+  }
+  
+  .not{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 28%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  
+  .head{
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    margin-left: 28%;
+  }
+
+  .boil{
+    text-align: center;
+    margin-left: 36%;
+
+  }
+  
+  .not{
+    text-align: center;
+    margin-left: 36%;
+
+  }
+  .celsius{
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width:426px){
+  
+
+.head{
+  margin-left: 6%;
+}
+
+  .boil{
+    text-align: center;
+    margin-left: 18%;
+    width: 300px;
+  }
+  
+  .not{
+    text-align: center;
+    margin-left: 18%;
+    width: 300px;
+  }
+  .celsius{
+    margin-left: 20%;
+  }
+}
