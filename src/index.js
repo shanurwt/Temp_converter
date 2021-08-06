@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import logo from './assets/boil1.png'
+import logo1 from './assets/not1.png'
 //-----ScaleNames
 
 const scaleNames= {
@@ -32,15 +33,20 @@ function tryConvert(temperature, convert) {
 }
 
 
-
 //-----BoilingVerdict
 
 function BoilingVerdict(props){
   if(props.celsius>=100){
-    return <p>The Water would Boil.</p>
+    return (<div className='boil'> 
+    <p className='hot'>The Water would Boil.</p> 
+    <img src={logo} width="200px" height="200px" alt="what boil" />
+    </div>)
   }
   else{
-    return <p>This would not boil</p>
+    return (<div className='not_boil'> 
+    <p className='sen'>Water would not boil</p> 
+    <img src={logo1} width="200px" height="200px" alt="not boiling sir" />
+    </div> )
   }
 }
 
@@ -60,7 +66,7 @@ class TemperatureInput extends React.Component{
     const temperature = this.props.temperature;
     const scale= this.props.scale;
     return(
-      <fieldset>
+      <fieldset className='celsius'>
       <legend>Enter the temperature in {scaleNames[scale]}: </legend>
       <input value={temperature} 
               onChange={this.handleChange} />
@@ -98,6 +104,7 @@ render(){
 
   return (
     <div>
+      <h1 className='head'>Temperature Converter</h1>
     <TemperatureInput
       scale="c"
       temperature={celsius}
@@ -115,6 +122,6 @@ render(){
 
 
 ReactDOM.render(
-  <Calculator />,
+  <Calculator className="celsius"/>,
   document.getElementById('root')
 );
