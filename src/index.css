@@ -1,19 +1,25 @@
 *{
-  /* background-color: #3E82FC; */
+  background-color: #F8EDE3;
 }
 .celsius{
+  text-decoration: none;
   margin-left: 42%;
-  margin-right: 40%;
-  margin-bottom: 30px;
-  color: red;
+  height: 130px;
+  width: 250px;
+  margin-bottom: 20px;
   text-align: center;
-  background-color: #FDC1C5;
+  color: #334257;
+  background-color: #F9F3F3;
+  font-size: 20px;
+}
+
+.ask{
+  text-align: center;
+  text-decoration: none;
+  background-color: whitesmoke;
 }
 
 .sen{
-  text-align: center;
-  margin-left: 35%;
-  margin-right: 33%;
   background: linear-gradient(to right, #26F7FD
   , #3E82FC);
   font-size: 30px;
@@ -21,8 +27,6 @@
 
 .hot{
   text-align: center;
-  margin-left: 35%;
-  margin-right: 33%;
   background: linear-gradient(to right, #FE2C54 , #FDAA47);
   font-size: 30px;
 }
@@ -32,3 +36,15 @@
   margin-left: 35%;
   margin-right: 33%;
 }
+.boil{
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 38%;
+}
+
+.not{
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 33%;
+}
+

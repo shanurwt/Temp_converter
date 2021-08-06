@@ -39,13 +39,13 @@ function BoilingVerdict(props){
   if(props.celsius>=100){
     return (<div className='boil'> 
     <p className='hot'>The Water would Boil.</p> 
-    <img src={logo} width="200px" height="200px" alt="what boil" />
+    <img className='logo' src={logo} width="200px" height="200px" alt="what boil" />
     </div>)
   }
   else{
-    return (<div className='not_boil'> 
+    return (<div className='not'> 
     <p className='sen'>Water would not boil</p> 
-    <img src={logo1} width="200px" height="200px" alt="not boiling sir" />
+    <img className='logo1' src={logo1} width="200px" height="200px" alt="not boiling sir" />
     </div> )
   }
 }
@@ -67,8 +67,8 @@ class TemperatureInput extends React.Component{
     const scale= this.props.scale;
     return(
       <fieldset className='celsius'>
-      <legend>Enter the temperature in {scaleNames[scale]}: </legend>
-      <input value={temperature} 
+      <p className='ask'>Enter the temperature in {scaleNames[scale]}: </p>
+      <input value={temperature}
               onChange={this.handleChange} />
       </fieldset>
   );
